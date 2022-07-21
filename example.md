@@ -4,9 +4,21 @@ A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This pl
 
 A rover’s position and location is represented by a combination of x and y coordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
 
-In order to control a rover, NASA sends a simple string of letters. The possible letters are ‘L’, ‘R’ and ‘M’. ‘L’ and ‘R’ makes the rover spin 90 degrees left or right respectively, without moving from its current spot. :question:**‘M’ means move forward one grid point, and maintain the same heading.**:question:
+In order to control a rover, NASA sends a simple string of letters. The possible letters are ‘L’, ‘R’ and ‘M’. ‘L’ and ‘R’ makes the rover spin 90 degrees left or right respectively, without moving from its current spot. **‘M’ means move forward one grid point, and maintain the same heading.**
 
-:question:**Assume that the square directly North from (x, y) is (x, y+1).**:question:
+- "heading" here means the direction the rover is facing
+- So it could be facing north, south, east, or west
+- imagine:
+  - A rover facing N at coords (4, 5)
+  - You get an L, so now the rover is facing W, but is still at (4, 5)
+  - You then get an M, so the rover moves one grid W and it's coords are now (3, 5).
+  - The rover is still facing W
+
+**Assume that the square directly North from (x, y) is (x, y+1).**
+
+- just telling you the coordinate system
+- It does not specify the x direction for example, which could also be reversed, it is implicit
+-
 
 INPUT:
 

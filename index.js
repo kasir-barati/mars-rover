@@ -8,4 +8,4 @@ LMLMLMLMM
 MMRMMRMRRM
 `;
 
-mars.marsRover(input);
+console.log(mars.marsRover(input));
